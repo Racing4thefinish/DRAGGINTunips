@@ -9,7 +9,8 @@
         "d53445b6-3fe8-46f9-9fdf-4f598e359fd5",
         "ae3cdf94-5a0a-43e1-a427-4c896dd3ba73",
         "2aeb9dcf-4a5c-47aa-b614-a2718fc3122f",
-        "d3625da9-4ef0-4856-81b5-cd74d80ddba3"
+        "d3625da9-4ef0-4856-81b5-cd74d80ddba3",
+        "29539b8f-760a-41a5-b351-53028344941a"
     ],
     "filterType": "GMObject",
     "folderName": "Background",

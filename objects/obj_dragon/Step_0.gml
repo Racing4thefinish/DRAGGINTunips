@@ -8,7 +8,6 @@ var next_y                   = y;
 var next_x                   = x;
 var percent                  = (y - min_dragon_height)/(max_dragon_height - min_dragon_height);
 
-
 // Calcualte the movement speed
 movement_speed = lerp(min_dragon_speed,max_dragon_speed, percent);
 
@@ -34,6 +33,8 @@ next_x += movement_speed * global.game_dt;
 if ( next_x > max_x_loc){
 	next_x = x_init;
 	next_y = y_init;
+	
+	has_tree = true;
 }
 
 if ( dragon_shoot_timer < dragon_shoot_dt){
@@ -44,11 +45,27 @@ if ( dragon_shoot_timer < dragon_shoot_dt){
 
 if ( true == dragon_is_ready_to_shoot && 
      true == shoot_dragon_command){
-	var ID_turnip = instance_create_depth(x,y,depth, obj_turnip);
-	ID_turnip.velocity += movement_speed;
+	if ( true == has_tree){
+		ID_tree_with_dragon.vel_x = movement_speed;
+		
+		has_tree            = false;
+		ID_tree_with_dragon = noone;
+	} else {
+		var ID_turnip = instance_create_depth(x,y,depth, obj_turnip);
+		ID_turnip.velocity += movement_speed;
+	}
 	dragon_shoot_timer = 0.0;
 }
 
 
 x = next_x;
 y = next_y;
+
+if ( true == has_tree){
+	if ( instance_exists(ID_tree_with_dragon)){
+		ID_tree_with_dragon.x = x;
+		ID_tree_with_dragon.y = y;
+	} else {
+		ID_tree_with_dragon = instance_create_depth(x,y,0, obj_tree);
+	}
+}

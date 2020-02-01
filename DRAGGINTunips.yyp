@@ -63,6 +63,22 @@
             }
         },
         {
+            "Key": "28b15b03-4a70-4ce2-b294-698c477b8db2",
+            "Value": {
+                "id": "e29ac63e-16f0-480a-affe-952aab60b8e2",
+                "resourcePath": "sprites\\spr_house\\spr_house.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29539b8f-760a-41a5-b351-53028344941a",
+            "Value": {
+                "id": "0595ff4a-400b-48bc-9e00-e9d0232ed61a",
+                "resourcePath": "objects\\obj_houseLocationController\\obj_houseLocationController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2aeb9dcf-4a5c-47aa-b614-a2718fc3122f",
             "Value": {
                 "id": "cac930e3-44d7-4879-a24c-d31bd25077db",
@@ -84,6 +100,14 @@
                 "id": "fca4bdfa-aa8f-4d0e-a697-fb67b4e0fee4",
                 "resourcePath": "views\\2fc478dd-17d2-460d-acd6-92a4cbddbe93.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "34b7d9c3-099b-4573-a3a2-c93a8ca08aa8",
+            "Value": {
+                "id": "747c0381-5fc1-44ba-9631-7f6e364688c3",
+                "resourcePath": "objects\\obj_house\\obj_house.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -315,6 +339,14 @@
             "Value": {
                 "id": "0f4bbf38-2137-4759-b666-10074865ae9c",
                 "resourcePath": "objects\\obj_ground\\obj_ground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "db50e5b3-571e-4657-a94d-d29db0ca1f40",
+            "Value": {
+                "id": "483cfedc-55f6-4277-a122-043bd6bcd9ca",
+                "resourcePath": "objects\\obj_PARENTdragonProjectile\\obj_PARENTdragonProjectile.yy",
                 "resourceType": "GMObject"
             }
         },

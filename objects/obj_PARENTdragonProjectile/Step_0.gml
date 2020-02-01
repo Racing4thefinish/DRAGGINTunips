@@ -20,6 +20,8 @@ if ( place_meeting(next_x, next_y, obj_ground)){
 if ( false == in_ground && place_meeting(next_x, next_y, obj_person)){
 	var ID_person = instance_nearest(next_x, next_y, obj_person);
 	ID_person.hp -= damage;
+	
+	instance_destroy();
 }
 
 x = next_x;
